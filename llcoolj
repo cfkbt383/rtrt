@@ -1,0 +1,10 @@
+provider "aws" {
+   region = "eu-west-2"
+   access_key = "AKIAX56FT25OXJU2534P"
+   secret_key = "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"
+}
+
+resource "aws_vpc" "myvpc" {
+  cidr_block = "10.0.0.0/16"
+}
+
